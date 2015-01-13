@@ -100,7 +100,7 @@
 
     // browser type & version
     var ua     = nav.userAgent.toLowerCase(),
-        mobile = /mobile|android|kindle|silk|midp|phone|(windows .+arm|touch)/.test(ua);
+        mobile = /mobile|android|kindle|silk|midp|phone/.test(ua);
 
     // useful for enabling/disabling feature (we can consider a desktop navigator to have more cpu/gpu power)
     api.feature("mobile" , mobile , true);
